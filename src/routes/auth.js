@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { register, login, getMe, googleAuth, phoneAuth, updateProfile } = require('../controllers/authController');
+const { register, login, getMe, googleAuth, phoneAuth, updateProfile, getAllUsers, updateUserRole, updateUserStatus } = require('../controllers/authController');
 const { body } = require('express-validator');
 const { authenticate } = require('../middleware/auth');
 const { isAdmin } = require('../middleware/isAdmin');
